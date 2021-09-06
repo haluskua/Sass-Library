@@ -3,6 +3,9 @@
 * {
   color: inherit;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body {
@@ -28,22 +31,28 @@ img {
 }
 
 h1 {
-  color: #326dee;
+  color: #fcfdff;
   margin-bottom: 0.75rem;
 }
 
 a {
-  color: #1ac886;
+  color: #fcfdff;
   cursor: pointer;
+}
+a:hover {
+  color: #d32752;
 }
 
 button {
-  color: white;
+  color: #fcfdff;
   border: 0;
-  background: #326dee;
+  background: #1ac886;
   cursor: pointer;
   border-radius: 20px;
   padding: 0.75rem;
+}
+button:hover {
+  background-color: #d32752;
 }
 
 .error {
@@ -64,4 +73,37 @@ button {
   padding: 0.75rem;
   border-radius: 20px;
   border-width: 1px;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+section {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+.one {
+  background-color: #326dee;
+  height: 50vh;
+}
+
+.two {
+  background-color: #1ac886;
+  height: 60vh;
+}
+
+.three {
+  background-color: #f6c31c;
+  height: 200vh;
+}
+
+.four {
+  background-color: #d32752;
 }
