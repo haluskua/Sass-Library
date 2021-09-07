@@ -109,3 +109,22 @@ section {
   background-color: #dda2df;
   height: 90vh;
 }
+
+.card {
+  display: block;
+  padding: 0.75rem;
+  border: 1px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  height: 60vh;
+}
+.card .cart-title {
+  font-size: 1rem;
+  padding-bottom: 0.75rem;
+  font-weight: bold;
+}
+.card .card-body {
+  font-style: 1rem;
+}
+.card .card-body a {
+  text-decoration: underline;
+}

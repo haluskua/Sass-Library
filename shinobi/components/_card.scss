@@ -3,4 +3,17 @@
   padding: $base-padding;
   border: $base-border-thickness;
   box-shadow: $base-box-shadow;
+  height: 60vh;
+
+  .cart-title {
+    font-size: $base-font-size;
+    padding-bottom: $base-padding;
+    font-weight: bold;
+  }
+  .card-body {
+    font-style: $base-font-size;
+    a {
+      text-decoration: underline;
+    }
+  }
 }
