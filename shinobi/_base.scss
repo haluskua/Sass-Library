@@ -32,3 +32,82 @@ img {
 .test {
   color: $primary;
 }
+
+///////////////////
+h1 {
+  color: $primary-text;
+  padding: $base-padding;
+
+  margin-bottom: $base-margin;
+}
+a {
+  color: $secondary;
+}
+button {
+  color: $primary-text;
+  border: 0;
+  background: $info;
+
+  border-radius: $base-border-radius;
+  padding: $base-padding;
+  height: auto;
+  &:hover {
+    background-color: $card;
+    cursor: pointer;
+  }
+}
+.error {
+  color: $error;
+  border-color: $error;
+  border-style: solid;
+
+  margin: $base-margin;
+  padding: $base-padding;
+  border-radius: $base-border-radius;
+  border-width: $base-border-thickness;
+}
+.notification {
+  color: $secondary;
+  border-color: $secondary;
+  border-style: solid;
+
+  margin: $base-margin;
+  padding: $base-padding;
+  border-radius: $base-border-radius;
+  border-width: $base-border-thickness;
+}
+
+/////////////
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  color: $primary-text;
+  scroll-snap-align: start;
+}
+
+.one {
+  background-color: $error;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.two {
+  background-color: $info;
+  height: 60vh;
+}
+.three {
+  background-color: $secondary;
+  height: 40vh;
+}
+.four {
+  background-color: $card;
+  height: 90vh;
+}

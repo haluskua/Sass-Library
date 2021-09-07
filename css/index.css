@@ -30,3 +30,82 @@ img {
 .test {
   color: #326dee;
 }
+
+h1 {
+  color: #fcfdff;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+a {
+  color: #1ac886;
+}
+
+button {
+  color: #fcfdff;
+  border: 0;
+  background: #f6c31c;
+  border-radius: 20px;
+  padding: 0.75rem;
+  height: auto;
+}
+button:hover {
+  background-color: #dda2df;
+  cursor: pointer;
+}
+
+.error {
+  color: #d32752;
+  border-color: #d32752;
+  border-style: solid;
+  margin: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 20px;
+  border-width: 1px;
+}
+
+.notification {
+  color: #1ac886;
+  border-color: #1ac886;
+  border-style: solid;
+  margin: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 20px;
+  border-width: 1px;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  color: #fcfdff;
+  scroll-snap-align: start;
+}
+
+.one {
+  background-color: #d32752;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.two {
+  background-color: #f6c31c;
+  height: 60vh;
+}
+
+.three {
+  background-color: #1ac886;
+  height: 40vh;
+}
+
+.four {
+  background-color: #dda2df;
+  height: 90vh;
+}
