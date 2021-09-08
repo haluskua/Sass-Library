@@ -88,25 +88,37 @@ section {
   height: 100vh;
   display: flex;
   justify-content: center;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
   color: #fcfdff;
   scroll-snap-align: start;
 }
 
 .one {
   background-color: #d32752;
-  justify-content: center;
   align-items: center;
   height: 80vh;
 }
 
 .two {
   background-color: #f6c31c;
+  background-color: #d32752;
   height: 60vh;
+  align-items: center;
 }
 
 .three {
   background-color: #1ac886;
   height: 40vh;
+  flex-direction: row;
+}
+.three div {
+  display: flex;
+  justify-self: center;
+  width: 60%;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .four {
@@ -2690,6 +2702,7 @@ section {
   border: 1px solid #ddd;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+  width: 50%;
 }
 .card .card-title {
   font-size: 1rem;

@@ -89,23 +89,35 @@ section {
   height: 100vh;
   display: flex;
   justify-content: center;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
   color: $primary-text;
   scroll-snap-align: start;
 }
 
 .one {
   background-color: $error;
-  justify-content: center;
   align-items: center;
   height: 80vh;
 }
 .two {
   background-color: $info;
+  background-color: $error;
   height: 60vh;
+  align-items: center;
 }
 .three {
   background-color: $secondary;
   height: 40vh;
+  flex-direction: row;
+  div {
+    display: flex;
+    justify-self: center;
+    width: 60%;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 .four {
   background-color: $card;
