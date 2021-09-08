@@ -79,17 +79,10 @@ button {
 
 /////////////
 
-.container {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
-}
-
 section {
-  height: 100vh;
+  height: auto;
   display: flex;
   justify-content: center;
-  justify-self: center;
   align-items: center;
   flex-direction: column;
   color: $primary-text;
@@ -99,7 +92,8 @@ section {
 .one {
   background-color: $error;
   align-items: center;
-  height: 80vh;
+  // height: 80vh;
+  padding: $base-padding;
 }
 .two {
   background-color: $info;
@@ -110,7 +104,7 @@ section {
 .three {
   background-color: $secondary;
   height: 40vh;
-  flex-direction: row;
+  flex-direction: column;
   div {
     display: flex;
     justify-self: center;
