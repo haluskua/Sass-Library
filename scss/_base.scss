@@ -89,6 +89,7 @@ section {
   color: $primary-text;
   scroll-snap-align: start;
   padding: $base-padding;
+  box-shadow: $base-box-shadow;
 }
 .one {
   background-color: $error;
