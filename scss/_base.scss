@@ -92,19 +92,15 @@ section {
   box-shadow: $base-box-shadow;
 }
 .one {
-  background-color: $error;
   align-items: center;
   height: 80vh;
   padding: $base-padding;
 }
 .two {
-  background-color: $info;
-  background-color: $error;
   height: 60vh;
   align-items: center;
 }
 .three {
-  background-color: $secondary;
   height: 40vh;
   flex-direction: column;
   div {
@@ -116,11 +112,9 @@ section {
   }
 }
 .four {
-  background-color: $card;
   height: 90vh;
 }
 .five {
-  background-color: $card;
   height: 80vh;
   display: flex;
   flex-direction: column;

@@ -16,10 +16,11 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
-  background-color: $card;
+  // background-color: $card;
   scroll-snap-type: y mandatory;
-  height: 100%;
+  height: auto;
   overflow-y: auto;
+  padding: $base-padding * 2;
 }
 .row {
   display: flex;
