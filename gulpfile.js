@@ -13,7 +13,7 @@ function buildStyles() {
 }
 
 function watchTask() {
-  watch(["sass/**/*.scss", "*.html"], buildStyles);
+  watch(["scss/**/*.scss", "*.html"], buildStyles);
 }
 
 exports.default = series(buildStyles, watchTask);

@@ -5,7 +5,6 @@
 %wrap-within {
   height: 100%;
   width: 100%;
-  @include box-shadow-blocks;
   :hover {
     cursor: pointer;
   }
@@ -16,7 +15,6 @@
   padding: $base-padding;
   border: $base-border-thickness solid #ddd;
   box-shadow: $base-box-shadow;
-  @include box-shadow-blocks;
   border-radius: math.div($base-border-radius, 4);
 
   .card-title {
