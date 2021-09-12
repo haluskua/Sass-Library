@@ -440,21 +440,32 @@ section {
   color: white;
 }
 
+.anchor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #19354a;
+  border-radius: 5px;
+  z-index: 9;
+}
+
 .card {
   display: block;
   padding: 0.75rem;
-  border: 1px solid #ddd;
   -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
           box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+  border: 1px solid #ae596a;
 }
 .card .card-title {
   font-size: 1rem;
   padding-bottom: 0.75rem;
   font-weight: bold;
+  color: #ffdd6c;
 }
 .card .card-body {
   font-size: 1rem;
+  color: #fcfdff;
 }
 .card .card-body a {
   text-decoration: underline;

@@ -3,27 +3,31 @@
 @use 'sass:math';
 
 %wrap-within {
-  height: 100%;
-  width: 100%;
-  :hover {
-    cursor: pointer;
-  }
+  display: flex;
+  background-color: $suit;
+  border-radius: math.div($base-border-radius, 4);
+  z-index: 9;
+}
+.anchor {
+  @extend %wrap-within;
 }
 
 .card {
   display: block;
   padding: $base-padding;
-  border: $base-border-thickness solid #ddd;
   box-shadow: $base-box-shadow;
   border-radius: math.div($base-border-radius, 4);
+  border: $base-border-thickness solid rgb(174, 89, 106);
 
   .card-title {
     font-size: $base-font-size;
     padding-bottom: $base-padding;
     font-weight: bold;
+    color: rgb(255, 221, 108);
   }
   .card-body {
     font-size: $base-font-size;
+    color: $primary-text;
 
     a {
       text-decoration: underline;
